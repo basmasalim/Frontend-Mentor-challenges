@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*! =======> Custom properties <======= */
+:root{
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%) ;
+}
+/*^ =======>  Typography <======= */
+body,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+h1,
+span{
+  font-family: "Fraunces", serif;
+}
+/*& =======>  Layout  <======= */
+main{
+  background-color: var(--cream);
+}
+h6{
+  color: var(--dark-grayish-blue);
+  letter-spacing: 5px;
+}
+main picture img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+}
+figure{
+  max-width: 600px;
+  background-color: var(--white);
+}
+.sales,p{
+  color: var(--dark-grayish-blue);
+  font-size: 14px;
+  font-weight: 500;
+}
+.sales{
+  vertical-align: super;
+  font-weight: 400;
+}
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  main picture img{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+  }
+}
